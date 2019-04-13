@@ -1,0 +1,5 @@
+In this case we are have a Dockerfile that has the instruction to 
+- Get Python image from docker hub
+- Copy all pwd local files to /src directory in the container
+- Execute command python with /src/x.py
+- x.py prints Hello World 

@@ -1,0 +1,8 @@
+This one line command basically does the following 
+- Docker client is talking to docker deamon (containerd) that is running on this local server
+- containerd looks for hello-world image in the local repository
+- since it will not be in local repo, it connects to docker hub and get the image
+- then a container is created from the image and gets run
+- containerd creates a name space with Linux OS and start running the container 
+- I do not know what language, but Hello World message gets printed
+- Then container is shutdown and the control is back to docker client

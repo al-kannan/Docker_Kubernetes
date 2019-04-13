@@ -1,0 +1,27 @@
+The output is 
+------------------------------------------------------------
+ubuntu@ip-172-31-8-142:~/hello_world_scala$ ./run.sh
+Sending build context to Docker daemon   5.12kB
+Step 1/3 : FROM williamyeh/scala
+ ---> 760152764c6a
+Step 2/3 : COPY . /src
+ ---> a909b7108bb5
+Step 3/3 : CMD ["scala", "/src/x.scala"]
+ ---> Running in 01e93fd3aab6
+Removing intermediate container 01e93fd3aab6
+ ---> 3e5091388763
+Successfully built 3e5091388763
+Successfully tagged cozent/myfirstscala:latest
+Hello World
+------------------------------------------------------------
+
+
+Basically we have downloaded public image posted by Mr. Willamyeh
+Container is created with 760152764c6a id
+Then we copied all files from local directory to container as /src
+New container is created with a909b7108bb5 id
+We issued a command to run scala, so it created another container with this as the starting application (with a x.scala file)
+It created another container with this info 01e93fd3aab6
+Then it created new container id 3e5091388763 and removed the intermediate container 
+Ran our myfistscala:latest image in a container with Hello World getting printed
+

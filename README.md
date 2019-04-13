@@ -21,5 +21,13 @@ Similar to above redis example you can start a container and run as many seconda
 ## Container isolation 
 This demonstrates that when you run two containers with the same image the containers are completely isolated, its file systems are not visible to other containers 
 
+## std in std out
+This demonstrates that docker can take your stdin and out with -it option. Basically you are talking to docker deamon, in turn it talks to container back and forth
+
+
+
+
+
+
 
 

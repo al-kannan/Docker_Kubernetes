@@ -1,0 +1,17 @@
+You can run a container in one session and run an another exec command with -it where input and output is redirected to stdin and stdout
+
+Steps
+
+Session 1
+docker run redis
+
+Session 2
+docker exec -it <container id> redis-cli
+
+You will see the redis cli
+
+you can type a redis command 
+put myvalue 10
+get myvalue
+
+you should see 10 printed 

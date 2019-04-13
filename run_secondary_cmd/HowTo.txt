@@ -1,0 +1,18 @@
+You can download an image and create a local container, run the container
+
+While the container is running, you can open an another session and run secondary command
+
+For example busybox is a small linux file system, so when you run it you can issue a command that is long running such as ping and then on an different session you can issue a secondary command on the running container with a different ping target 
+
+below are the commands : 
+
+Linux sesson 1
+docker run busybox ping google.com
+
+
+Linux sesson 2
+docker ps to get the container id 
+docker exec -it <container id> ping yahoo.com
+
+Linux sesson 3
+docker ps will show only one container running but we have two commands running using the same image, pretty cool

@@ -1,0 +1,7 @@
+When we run the below command  from session 1
+docker run -it busybox sh
+
+When we run the below command  from session 2
+docker run -it busybox sh
+
+the above two are two separate containers running and will have it own namespace in Linux, i.e., we can touch a file in one container instance the other container will not see it, file system is completely isolated 

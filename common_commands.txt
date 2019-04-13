@@ -1,0 +1,51 @@
+-- To list running containers on this machine 
+docker ps
+
+-- To list all containers we ever created on this machine 
+docker ps --all
+
+-- To create a container , this will give container id or you can name the id
+-- Basically container file system is getting created locally
+docker create <image name>
+
+-- To start a container
+-- Basically instantiate the container using the container file system 
+docker start <container id>
+
+-- This does both create the container and run the container
+docker run <image> <cmd> <args>
+
+-- Note: When we convert an image into a container and run it, docker creates the container in local storage. After the default command or override command is executed the container in the local storage still remains until we do a remove with below command or include -rm option when we ran it
+
+-- This will get rid of stopped containers, networks not used by any containers, dangling images and all build cache
+docker system prune
+
+-- When we run a container, its logs are captured by docker, on the stopped container we can still get our logs out by 
+docker logs <container id>
+
+-- Container Life Cycle
+You create container from an image
+when you modify you create new container
+when you run with a override command from command line you will create new container
+when you run without -a you will not see the output but it got run
+docker engine is capturing the logs and storing it somewhere
+by docker logs command with the container id you can see the logs
+if you run the same container id again, the logs get accumulated
+when we do docker logs it will display all logs from all runs
+if you do the prune docker will remove all the container images from our storage
+
+
+-- To soft stop a container that is running with an opportunity to clean up
+docker stop <container id>
+
+-- To hard stop a container that is running  without any clean up
+docker kill <container id>
+
+-- To run secondary commands on a running container
+docker exec -it <container id> <command>
+
+
+
+
+
+

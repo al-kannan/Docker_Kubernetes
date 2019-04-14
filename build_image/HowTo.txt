@@ -7,3 +7,4 @@ Using Dockerfile we can download the above base image, RUN as many commands to i
 Above steps will lead Decoker deamon to build a new container with a container id
 
 Note that we can convert this container and using Docker commit command to an image, once it is done we can have another Dockerfile to start from this image and add more, we can push this new image to Docker Hub for all developers to download to their laptop for development
+

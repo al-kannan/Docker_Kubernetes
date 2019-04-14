@@ -31,13 +31,15 @@ Similar to above redis example you can start a container and run as many seconda
 ## Container isolation 
 This demonstrates that when you run two containers with the same image the containers are completely isolated, its file systems are not visible to other containers 
 
-## std in std out
+## Stdin Stdout
 This demonstrates that docker can take your stdin and out with -it option. Basically you are talking to docker deamon, in turn it talks to container back and forth
 
+## Build Image 
+This example shows how to build a new image based on base image from Docker hub and then RUN to install additional packages along with initial startup command. This creates series of containers and finally we can convert the container into a image
 
+## Ngnix Port Mapping
+This demonstates docker host port should be mapped to container port in order for container to serve web pages
 
-
-
-
-
+## Mounting host volume
+This demonstates that host OS folders can be mounted as a folder on the running container, once mounted it can treated as a local folder within container namespace
 

@@ -11,3 +11,5 @@ Container can produce output via database connection or host machine volume moun
 Many times Container will act like web server, in such case we need to map host machine port to container port, these two can be different, this is a run time mapping only
 
 In AWS we need to open up the security group for 8080 port that we are mapping to NGNIX webserver which is running in port 80
+
+Also once we map 8080 host port to container port 80 Docker deamon tracks this and will not allow to start another container on the same port mapping

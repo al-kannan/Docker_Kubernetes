@@ -44,7 +44,8 @@ docker kill <container id>
 -- To run secondary commands on a running container
 docker exec -it <container id> <command>
 
-
+-- To remove all Docker images
+docker system prune -a
 
 
 

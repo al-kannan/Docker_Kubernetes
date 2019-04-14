@@ -1,0 +1,5 @@
+Here we are mounting a local volume on the container where Ngnix web server home html folder
+
+Once mounted from container you can modify files in the host machine folder
+
+In this example when we go to <ip>:8090, port gets mapped to 80 inside the container and Ngnix is pointing to host folder 

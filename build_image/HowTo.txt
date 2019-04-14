@@ -1,0 +1,9 @@
+Docker Hub comes with base image
+
+Typically base image or base operating system with very minimal footprint, such as ubuntu, debian etc, which comes with couple of hundred megabytes
+
+Using Dockerfile we can download the above base image, RUN as many commands to install additional absolutly needed packages for our project and then provide default run CMD
+
+Above steps will lead Decoker deamon to build a new container with a container id
+
+Note that we can convert this container and using Docker commit command to an image, once it is done we can have another Dockerfile to start from this image and add more, we can push this new image to Docker Hub for all developers to download to their laptop for development

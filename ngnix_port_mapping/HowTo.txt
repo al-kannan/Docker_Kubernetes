@@ -1,0 +1,13 @@
+A typical computer will have cpu(s), memory, ports, network etc. 
+
+On a host machine we can run Docker deamon and via Docker client we can start any number of container. 
+
+These containers run within Docker, applications running on the container would need inputs and will produce output. 
+
+Inputs can be copied from local file system when image is build or host machine volume can be mounted on the container or a port where appliations can receive inputs 
+
+Container can produce output via database connection or host machine volume mounting etc. 
+
+Many times Container will act like web server, in such case we need to map host machine port to container port, these two can be different, this is a run time mapping only
+
+In AWS we need to open up the security group for 8080 port that we are mapping to NGNIX webserver which is running in port 80

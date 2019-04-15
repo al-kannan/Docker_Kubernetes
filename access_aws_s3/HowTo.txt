@@ -1,0 +1,8 @@
+Accessing s3 requires awscli install and aws configure
+
+aws configure essentially creates two files, we have just created these files part of the Dockerfile, so when we build the image we will have these two files store at /root/.aws folder
+
+After this container can run any aws cli commands such as 
+aws s3 ls
+
+it works...pretty cool

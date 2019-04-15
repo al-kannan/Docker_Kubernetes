@@ -3,7 +3,7 @@ Docker Kubernetes Proof Of Concept
 
 Docker is all about cost savings, development consistency and speed in processing. 
 
-It is about how can we fully leverage VMs with any resource wastage thereby we save on VMs. 
+It is about how can we fully leverage VMs without any resource wastage thereby we save on VMs. 
 
 Docker is also about software development productivity. You can create a docker image and give it to developers where they can work on and get you a new image, pretty cool...
 

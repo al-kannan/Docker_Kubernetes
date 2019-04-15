@@ -1,0 +1,27 @@
+Sign on to hub.docker.com
+
+Create a repo
+
+Login into your repo
+docker login --username=yourhubusername
+
+Check your local images
+docker images
+
+Tag your local image
+docker tag <Image Id> yourhubusername/repo_name:<some tag name>
+
+docker push yourhubusername/repo
+
+go to your hub.docker.com repo and see the tags section, you should see your image
+
+you can more images with different tag name
+docker tag <Image Id> yourhubusername/repo_name:<some tag name>
+
+you can see it in the hub
+
+you can see public view of the repo
+
+you can use the pull to get your images to other servers, if you don't provide tag name Docker will pull tag with the latest as the tag
+docker pull <hub username>/<repo_name>:<tag name>
+

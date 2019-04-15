@@ -43,3 +43,11 @@ This demonstates docker host port should be mapped to container port in order fo
 ## Mounting host volume
 This demonstates that host OS folders can be mounted as a folder on the running container, once mounted it can treated as a local folder within container namespace
 
+## Accessing Host Env Variable
+This demonstates that host OS environment variable can be passed on while image is being built. This comes handy for handling credentials, you don't want to store it in any file except in a fully locked account and brought as env var
+
+## Access S3
+This shows a simple ubunut OS, on top of it with aws-cli installed, along with it aws configure is configured so that applications can access aws resources once container is up
+
+## Push to Docker Hub
+This shows how to take a local image and push it to Docker Hub for public use or for developers to use it as an image

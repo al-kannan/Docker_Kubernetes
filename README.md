@@ -1,9 +1,14 @@
 # Docker_Kubernetes
 Docker Kubernetes Proof Of Concept
 
-Docker is all about cost savings and speed. It is about how can we fully leverage VMs thereby we save on VMs. Speed is to how quickly I can start more concurrency, launching a new VM is verrrry slow, whereas Docker can be started in seconds
+Docker is all about cost savings, development consistency and speed in processing. 
 
-Docker is also about software development productivity. You can create a docker image and give that to your developer where he can work on the sofware and get you a new image, pretty cool
+It is about how can we fully leverage VMs with any resource wastage thereby we save on VMs. 
+
+Docker is also about software development productivity. You can create a docker image and give it to developers where they can work on and get you a new image, pretty cool...
+
+Speed is about how quickly I can start more concurrent threads of my application, launching a new VM for every thread is veeeerrrry slow, whereas Docker can be start in seconds
+
 
 More Explanation : 
 In order to leverage hardware we came up with virtual machine as a first step, wonderful, but virtual machines are created with no clear objectives, basically a general purpose machine, i.e., we create VM with an objective to create an OS, certain amount of memory, cpu, network i/o etc, utilizing these resources is ARBITRARY, most of the time we waste some memory, some CPU, some I/O. 

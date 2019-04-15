@@ -1,0 +1,7 @@
+Basically we cannot store credentials part of the Dockerfile
+
+It can be kept at a locked-in account and source as host eve variable
+
+Then we can build image with these values, pushing it to container image as a file and then the applications need to use it appropriately
+
+This can also be done with a simple COPY command within Dockerfile

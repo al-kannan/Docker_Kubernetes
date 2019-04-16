@@ -1,0 +1,14 @@
+version: '3'
+services:
+        nginxserver1:
+                build: ./nginx
+                ports: 
+                        - 8080:80
+        nginxserver2:
+                build: ./nginx
+                ports: 
+                        - 8090:80
+        ubuntuserver1:
+                build: ./ubuntu1
+        ubuntuserver2:
+                build: ./ubuntu2

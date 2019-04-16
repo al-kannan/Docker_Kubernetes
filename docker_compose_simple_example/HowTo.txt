@@ -1,0 +1,7 @@
+Docker Compose is essentially a replacement to docker cli. It just makes life easier especially when we run multiple containers within a single host
+
+For an application there could be multiple containers, each container will have different image and these put together as stack, containers among the stack need to communicate among themselves and outside world. 
+
+Docker create a network among the containers and each container can talk to the other by docker compose service name
+
+In this example I have created two nginx server and two client ubunt server pinging both nginx servers 

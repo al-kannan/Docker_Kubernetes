@@ -56,3 +56,5 @@ This shows a simple ubunut OS, on top of it with aws-cli installed, along with i
 
 ## Push to Docker Hub
 This shows how to take a local image and push it to Docker Hub for public use or for developers to use it as an image
+
+## CICD

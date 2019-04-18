@@ -1,0 +1,21 @@
+sudo: required
+services:
+        - docker
+
+before_install:
+        - docker build -t al-kannan/cicd -f Dockerfile .
+
+script:
+        - echo "$AWS_ACCESS_KEY"
+deploy:
+        provider: elasticbeanstalk
+        access_key_id: $AWS_ACCESS_KEY
+        secret_access_key:
+           secure: "$AWS_SECRET_KEY"
+        region: "us-east-2"
+        app: "cicd"
+        env: "Cicd-env"
+        bucket_name: "elasticbeanstalk-us-east-2-752997588973"
+        bucket_path: "cicd"
+        on:
+          branch: master

@@ -77,4 +77,4 @@ We will create .travis.yml file with build and run and deploy instruction for Tr
 - create those env variable in travis ci 
 - now include deploy steps in .travis.yml file 
 - push it to git 
-- you should travis ci doing the build and deploy to aws
+- you should see travis ci doing the build and deploy to aws

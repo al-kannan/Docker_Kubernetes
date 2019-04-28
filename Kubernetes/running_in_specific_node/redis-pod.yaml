@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+        name: redis-pod2
+        labels:
+                component: web
+spec:
+        containers:
+                - name: client
+                  image: redis
+                  ports:
+                        - containerPort: 6379
+        nodeSelector:
+                node_name: node1
+

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+        name: redis-multi-deployment
+spec:
+        replicas : 14
+        selector:
+                matchLabels:
+                        component: web2
+        template:
+                metadata:
+                        labels:
+                                component: web2
+                spec:
+                        containers:
+                                - name: client1
+                                  image: redis
+                                  ports:
+                                          - containerPort: 6379
+                                - name: client3
+                                  image: nginx

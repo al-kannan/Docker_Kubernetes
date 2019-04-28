@@ -1,0 +1,14 @@
+kubectl version
+kubectl get pods
+kubectl get pods -o wide
+kubectl get services 
+kubectl get secrets
+
+# to connect to the container 
+kubectl exec -it <pod name> -- /bin/bash
+
+
+kubectl delete pods redis-pod2
+
+
+kubectl describe pod redis-pod

@@ -1,0 +1,6 @@
+We can use the deployment object to deploy containers
+
+Containers are defined within the yaml file as templates
+
+To remove all 30 containers do 
+kubectl delete -f redis-deployment.yaml

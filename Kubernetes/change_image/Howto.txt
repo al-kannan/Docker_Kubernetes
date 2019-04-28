@@ -1,0 +1,1 @@
+We can start with an image and then we can change the yaml file and apply the change, new image will take effect immediately 

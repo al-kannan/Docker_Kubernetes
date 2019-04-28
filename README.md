@@ -1,4 +1,4 @@
-# Docker_Kubernetes
+# Docker
 Docker Kubernetes Proof Of Concept
 
 Docker is all about cost savings, development consistency and speed in processing. 
@@ -78,3 +78,44 @@ We will create .travis.yml file with build and run and deploy instruction for Tr
 - now include deploy steps in .travis.yml file 
 - push it to git 
 - you should see travis ci doing the build and deploy to aws
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Kubernetes
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Kubernetes Architecture Components
+Kubernates Master
+- etcd process is similar to Zookeeper, distributed key value store
+- API server process which provides all the operation on cluster
+- Controller Manager component is responsible for most of the collectors that regulates the state of cluster and performs a task
+- Scheduler is one of the key components of Kubernetes master. It is a service in master responsible for distributing the workload.
+
+Kubernates Node
+- Docker engine manages container execution within pods
+- Kubelet Manages pods on node, volume, secrets, creating new containers etc.
+- Kubernetes Proxy Service manages networking part for nodes
+
+
+## Installing Kubernetes on AWS 3 Node Cluster
+Please see the Kubernetes/install.steps
+
+## Simple Kubernetes Single Pod
+simple_redis_pod folder should have the redis-pod.yaml and redis-node-port.yaml files. 
+
+Basically we are pulling redis images from Docker Hub and leaving where to run with Kubernetes
+
+## Running Containers in Specific Node
+We need to label the node, please see the run.sh on How to do it
+With nodeSelector part of the yaml file we can point to a label (name=value) pair 
+
+## Change Image
+Change image and apply the yaml file to the Kubernetes will terminate the conatiner and restart with new image
+
+## Simple Deployment
+Here I have created 30 running instance of redis on two kubernetes nodes
+
+## Multi Container 
+Here I have created 30 running pods with two container each, one running redis and other with ngix
+For some reason it did not scale beyond 16, don't know why, did not had the time to dig..:(
+
+Basically Kubernetes can deploy containers on a cluster very easily, declaratively. Tricky part of K8s is the network, it has its own network service with assigning IP address to each pod
+

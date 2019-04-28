@@ -1,0 +1,3 @@
+We can use the deployment object to deploy multi containers
+
+Containers are defined within the yaml file as templates with multiple images 

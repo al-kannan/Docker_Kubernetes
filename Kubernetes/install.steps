@@ -1,3 +1,8 @@
+-- This will create three nodes cluster (1 k8s master and 2 k8s node) on a AWS EC2 instance
+-- In order to do this you need first spin up a new EC2 instance (micro) Ubuntu latestand use this as your laptop VM
+-- Below steps need to be run from your laptop VM
+-- Note: Please do not destroy laptop VM, it has .ssh file with public/pvt access key details to log into k8s master or k8s node servers 
+
 Installing K8s on Ubuntu:
 curl -O https://bootstrap.pypa.io/get-pip.py $ sudo python2.7 get-pip.py
 sudo apt update

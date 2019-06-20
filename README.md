@@ -88,7 +88,7 @@ Kubernates Master
 - Controller Manager component is responsible for most of the collectors that regulates the state of cluster and performs a task
 - Scheduler is one of the key components of Kubernetes master. It is a service in master responsible for distributing the workload.
 
-**Kubernates Node
+**Kubernates Node**
 - Docker engine manages container execution within pods
 - Kubelet Manages pods on node, volume, secrets, creating new containers etc.
 - Kubernetes Proxy Service manages networking part for nodes

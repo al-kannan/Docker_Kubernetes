@@ -1,16 +1,15 @@
-# Docker
-Docker Kubernetes Proof Of Concept
+# Docker Containers and Kubernetes Container Orchestration
 
-Docker is all about cost savings, development consistency and speed in processing. 
+**Docker is all about cost savings, development consistency and speed in processing** 
 
 It is about how can we fully leverage VMs without any resource wastage thereby we save on VMs. 
 
-Docker is also about software development productivity. You can create a docker image and give it to developers where they can work on and get you a new image, pretty cool...
+**Docker is also about software development productivity.** You can create a docker image and give it to developers where they can work on and get you a new image, pretty cool...
 
-Speed is about how quickly I can start more concurrent threads of my application, launching a new VM for every thread is veeeerrrry slow, whereas Docker can be start in seconds
+**Speed is about how quickly I can start more concurrent threads of my application**, launching a new VM for every thread is veeeerrrry slow, whereas Docker can be start in seconds
 
+**Containers are ideal for a workload running many copies to process different dataset across the cloud VM**
 
-More Explanation : 
 In order to leverage hardware we came up with virtual machine as a first step, wonderful, but virtual machines are created with no clear objectives, basically a general purpose machine, i.e., we create VM with an objective to create an OS, certain amount of memory, cpu, network i/o etc, utilizing these resources is ARBITRARY, most of the time we waste some memory, some CPU, some I/O. 
 
 This is where docker comes in and says how about we run applications in a container (a sub area within VM), we can run many containers, can be started quickly, we can pack it tightly and save money, for packing tightly we can use Kubernetes across VMs...there you go now we use VM fully
@@ -89,10 +88,10 @@ Kubernates Master
 - Controller Manager component is responsible for most of the collectors that regulates the state of cluster and performs a task
 - Scheduler is one of the key components of Kubernetes master. It is a service in master responsible for distributing the workload.
 
-Kubernates Node
-- Docker engine manages container execution within pods
-- Kubelet Manages pods on node, volume, secrets, creating new containers etc.
-- Kubernetes Proxy Service manages networking part for nodes
+**Kubernates Node
+**- Docker engine manages container execution within pods
+**- Kubelet Manages pods on node, volume, secrets, creating new containers etc.
+**- Kubernetes Proxy Service manages networking part for nodes
 
 
 ## Installing Kubernetes on AWS 3 Node Cluster
@@ -118,4 +117,3 @@ Here I have created 30 running pods with two container each, one running redis a
 For some reason it did not scale beyond 16, don't know why, did not had the time to dig..:(
 
 Basically Kubernetes can deploy containers on a cluster very easily, declaratively. Tricky part of K8s is the network, it has its own network service with assigning IP address to each pod
-

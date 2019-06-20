@@ -89,9 +89,9 @@ Kubernates Master
 - Scheduler is one of the key components of Kubernetes master. It is a service in master responsible for distributing the workload.
 
 **Kubernates Node
-**- Docker engine manages container execution within pods
-**- Kubelet Manages pods on node, volume, secrets, creating new containers etc.
-**- Kubernetes Proxy Service manages networking part for nodes
+- Docker engine manages container execution within pods
+- Kubelet Manages pods on node, volume, secrets, creating new containers etc.
+- Kubernetes Proxy Service manages networking part for nodes
 
 
 ## Installing Kubernetes on AWS 3 Node Cluster
